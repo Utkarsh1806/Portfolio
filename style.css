@@ -249,42 +249,64 @@ nav .fas{
 }
 
 @media screen and (max-width: 600px) {
+    html,body {
+            overflow-x: hidden;
+        }
+    
+        body {
+            position: relative
+        }
+    body{
+        scrollbar-width: 0px;
+    }
     .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 20%;
+        font-size: 20px;
     }
     .header-text h1{
         font-size: 30px;
     }
-        nav .fas {
-            display: block;
-            font-size: 25px;
-        }
-        nav ul{
-            background: #ff004f;
-            position :fixed;
-            top : 0;
-            right : -200px;
-            width : 200px;
-            height : 100vh;
-            padding-top: 50px;
-            z-index: 2;
-            transition: right 0.5s;
-        }
-        nav ul li{
-            display: block;
-            margin : 25px;
-        }
-        nav ul .fas{
-            position: absolute;
-            top: 25px;
-            left: 25px;
-            cursor: pointer;
-        }
-
+    nav .fa-light {
+        display: block;
+        font-size: 25px;
+    }
+    nav .fa-sharp{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #0999f2;
+        position :absolute;
+        top : 0;
+        right : -200px;
+        width : 200px;
+        height : 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s ease-in;
+    }
+    nav ul li{
+        display: block;
+        margin : 25px;
+    }
+    nav ul .fa-light{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav ul .fa-sharp{
+        position: absolute;
+        left: 25px;
+        cursor: pointer;
+        top: 25px;
+    }
+    
     .sub-title{
         font-size:40px;
+        padding-right: 50%;
     }
+    
     .about-col-1,.about-col-2{
         flex-basis: 100%;
     }
@@ -293,6 +315,14 @@ nav .fas{
     }
     .about-col-2{
         font-size: 14px;
+        margin-top: 100%;
+        margin-left: 0px;
+    }
+    .about-col-2 p{
+        font-size: 10px;
+    }
+    #Projects .container{
+        margin-top: 640px;
     }
     .tab-links{
         font-size: 16px;
@@ -304,9 +334,21 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
-           
-}
-#msg{
-    color: #61b752;
-    margin-top: -40px;
+        .services {
+            font-size: 16px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            margin-left: 300px;
+        }
+    
+        #contact {
+            margin-top: 60%;
+        }
+        .tagcloud{
+            font-size: 15px;
+            margin-top: 100%;
+            margin-bottom: 30px;
+            margin-left: -250px;
+            
+        }
 }
